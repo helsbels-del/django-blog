@@ -13,10 +13,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
-from dotenv import load_dotenv
-from django.core.exceptions import ImproperlyConfigured
+if os.path.isfile('env.py'):
+    import env
+# from dotenv import load_dotenv
+#f rom django.core.exceptions import ImproperlyConfigured
 
-load_dotenv()   
+# load_dotenv()   
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -36,7 +38,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-helsbelsdel-djangoblog-s2tvyhbunkz.ws.codeinstitute-ide.net',
 '8000-helsbelsdel-djangoblog-lwcdmh0tbrm.ws.codeinstitute-ide.net',
 'django-blog-hls',
-'.herokuapp.com']
+'.herokuapp.com',
+ '127.0.0.1',]
 
 
 # Application definition
@@ -97,7 +100,7 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.codeinstitute-ide.net/",
+    "https://localhost",
     "https://*.herokuapp.com"
 ]
 
