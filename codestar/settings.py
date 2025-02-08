@@ -36,10 +36,10 @@ if not SECRET_KEY:
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-helsbelsdel-djangoblog-s2tvyhbunkz.ws.codeinstitute-ide.net',
-'8000-helsbelsdel-djangoblog-lwcdmh0tbrm.ws.codeinstitute-ide.net',
-'django-blog-hls',
-'.herokuapp.com',
- '127.0.0.1',]
+    '8000-helsbelsdel-djangoblog-lwcdmh0tbrm.ws.codeinstitute-ide.net',
+    'django-blog-hls',
+    '.herokuapp.com',
+    '127.0.0.1',]
 
 
 # Application definition
