@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 if not SECRET_KEY:
     raise ImproperlyConfigured("The SECRET_KEY environment variable is missing.")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-helsbelsdel-djangoblog-s2tvyhbunkz.ws.codeinstitute-ide.net',
     '8000-helsbelsdel-djangoblog-lwcdmh0tbrm.ws.codeinstitute-ide.net',
